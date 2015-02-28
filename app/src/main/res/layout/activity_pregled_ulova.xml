@@ -1,0 +1,69 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="diplomski.ulovribe.PregledUlovaActivity"
+    android:background="@color/pozadina">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pregledSpnrVrstaRibe"
+        android:spinnerMode="dropdown" />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Početni Datum"
+            android:layout_weight="1"
+            android:id="@+id/pregledTvStartDate"
+            android:gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pregledIbStartDate"
+            android:src="@drawable/ic_calendar" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Završi Datum"
+            android:id="@+id/pregledTvEndDate"
+            android:gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pregledIbEndDate"
+            android:src="@drawable/ic_calendar" />
+    </TableRow>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pregledListView"
+        android:choiceMode="none"
+        android:divider="@color/material_deep_teal_200"
+        android:dividerHeight="3dp"
+        android:padding="3dp"
+        android:background="@color/material_deep_teal_200" />
+</TableLayout>

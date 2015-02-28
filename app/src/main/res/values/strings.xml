@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ulov Ribe</string>
+    <string name="title_activity_unos_ulova">Unos Ulova</string>
+    <string name="title_activity_pregled_ulova">Pregled Ulova</string>
+    <string name="title_activity_uredi_kategorije">Uređivanje Kategorija</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="kategorije_spinner_items">
+        <item>Ribe</item>
+        <item>Pribori</item>
+        <item>Mamaci</item>
+        <item>Lokacije</item>
+    </string-array>
+
+    <color name="pozadina">#56A4FC</color>
+    <color name="actionBarColor">#3694FF</color>
+</resources>
